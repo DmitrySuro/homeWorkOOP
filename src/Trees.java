@@ -32,8 +32,9 @@ public class Trees implements Serializable {
         return "Фамильное древо " +'\n' + communlist;
     }
 
-    
-
-
+    public List<Communication> communications(){
+        List<Communication> res;
+        return res;
+    }
 
 }

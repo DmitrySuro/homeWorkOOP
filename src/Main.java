@@ -22,14 +22,15 @@ public class Main {
         trees.add_communication(comun23);
         trees.add_communication(comun24);
         trees.add_communication(comun34);
-        
+        System.out.println(comun12.getTypeCommunicationHuman1());
         System.out.println(trees);
+        // System.out.println(trees.getByMother(t));
         
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(
                 new FileOutputStream(".\\homeWorkOOP.\\src.\\trees.out"));
         objectOutputStream.writeObject(trees);
         objectOutputStream.close();
-        
+
         
     }
 
