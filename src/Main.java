@@ -1,6 +1,10 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
         Trees trees = new Trees();
         Human human1 = new Human("Egor", "Petrov", 1, 60, "male");
         Human human2 = new Human("Olga", "Petrova", 5, 60, "female");
@@ -18,8 +22,15 @@ public class Main {
         trees.add_communication(comun23);
         trees.add_communication(comun24);
         trees.add_communication(comun34);
+        
         System.out.println(trees);
-
+        
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(
+                new FileOutputStream(".\\homeWorkOOP.\\src.\\trees.out"));
+        objectOutputStream.writeObject(trees);
+        objectOutputStream.close();
+        
+        
     }
 
 }

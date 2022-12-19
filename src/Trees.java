@@ -1,7 +1,9 @@
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Trees {
+public class Trees implements Serializable {
     private List<Communication> communlist;
 
     public Trees(List<Communication> communlist) {
@@ -24,9 +26,14 @@ public class Trees {
         communlist.add(communication);
     }
 
+    
     @Override
     public String toString() {
         return "Фамильное древо " +'\n' + communlist;
     }
+
+    
+
+
 
 }

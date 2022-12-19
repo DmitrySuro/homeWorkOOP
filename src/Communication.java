@@ -1,4 +1,6 @@
-public class Communication {
+import java.io.Serializable;
+
+public class Communication implements Serializable{
     private Human human1;
     private Human human2;
     private TypeCommunication typeCommunicationHuman1;
@@ -33,5 +35,7 @@ public class Communication {
         return human1.getName() + " " + human1.getSurname() + " " + typeCommunicationHuman1
                 + " " + human2.getName() + " " + human2.getSurname() + " " + typeCommunicationHuman2 + '\n';
     }
+
+    
 
 }
