@@ -1,7 +1,5 @@
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException, IOException {
@@ -26,10 +24,10 @@ public class Main {
         System.out.println(trees);
         // System.out.println(trees.getByMother(t));
         
-        ObjectOutputStream objectOutputStream = new ObjectOutputStream(
-                new FileOutputStream(".\\homeWorkOOP.\\src.\\trees.out"));
-        objectOutputStream.writeObject(trees);
-        objectOutputStream.close();
+        // ObjectOutputStream objectOutputStream = new ObjectOutputStream(
+        //         new FileOutputStream(".\\homeWorkOOP.\\src.\\trees.out"));
+        // objectOutputStream.writeObject(trees);
+        // objectOutputStream.close();
 
         
     }

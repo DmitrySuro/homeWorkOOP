@@ -3,7 +3,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Trees implements Serializable {
+public class Trees implements Serializable{
     private List<Communication> communlist;
 
     public Trees(List<Communication> communlist) {
@@ -32,9 +32,9 @@ public class Trees implements Serializable {
         return "Фамильное древо " +'\n' + communlist;
     }
 
-    public List<Communication> communications(){
-        List<Communication> res;
-        return res;
-    }
+    // public List<Communication> communications(){
+    //     List<Communication> res;
+    //     return res;
+    // }
 
 }
